@@ -12,6 +12,11 @@ public class Main {
 		
 		Time t = new Time();
 		t.getTime();
+		
+		
+		CheckList chk = new CheckList();
+		
+		System.out.println(chk.getId());
 
 	}
 
