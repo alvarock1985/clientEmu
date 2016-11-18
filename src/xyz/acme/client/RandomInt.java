@@ -7,13 +7,15 @@ public class RandomInt {
 	
 	int value;
 	
-	public void genInt(){
+	public int genInt(){
 		
 		Random randomGen = new Random();
 		
 		value = randomGen.nextInt(30);
+		return value;
 		
-		System.out.println(value);
+		
+		
 		
 		
 		

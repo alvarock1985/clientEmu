@@ -6,17 +6,9 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		
-		RandomInt ran = new RandomInt();
+		InsertData d = new InsertData();
 		
-		ran.genInt();
-		
-		Time t = new Time();
-		t.getTime();
-		
-		
-		CheckList chk = new CheckList();
-		
-		System.out.println(chk.getId());
+		d.insertData();
 
 	}
 

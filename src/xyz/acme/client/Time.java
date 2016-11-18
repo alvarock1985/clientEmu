@@ -4,11 +4,11 @@ import java.sql.Timestamp;
 
 public class Time {
 	
-	public void getTime(){
+	public Timestamp getTime(){
 		
 		
 		java.sql.Timestamp date = new java.sql.Timestamp(new java.util.Date().getTime());
-		System.out.println(date);
+		return date;
 		
 	}
 
