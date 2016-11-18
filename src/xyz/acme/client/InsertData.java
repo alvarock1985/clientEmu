@@ -23,14 +23,16 @@ public class InsertData {
 			lista = si.getSensorId();
 			
 			Timestamp tstmp = time.getTime();
-			int num = chk.getId()+1;
+			
 			
 			Connection con = db.connectToDb();
 			stmt = con.createStatement();
 			for(int i=0;i<lista.size();i++){
+				int num = chk.getId()+1;
 				int num2 = ran.genInt();
-				System.out.println("dataid: "+ num + "data: "+num2+ "sensorId:"+lista.get(i)+"fecha: "+tstmp);
-				stmt.executeUpdate("INSERT into datasensor");
+			
+				
+				stmt.executeUpdate("INSERT into datasensor (DATAID,SENSOR_SENSORID,DATA,TIMESTAMP) values('"+num+"','"+lista.get(i)+"','"+num2+"',to_timestamp('"+tstmp+"','YYYY/MM/DD HH24:MI:SSXFF'))");
 				
 			}
 			
@@ -38,7 +40,7 @@ public class InsertData {
 			
 		}
 		catch(Exception e){
-			
+			System.out.println(e);
 			
 		}
 		
