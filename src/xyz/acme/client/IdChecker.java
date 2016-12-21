@@ -5,9 +5,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class SensorID {
+public class IdChecker {
 	
-	DataBase db = new DataBase();
+	DataBaseManager db = new DataBaseManager();
 	public Statement stmt;
 	public ArrayList<Integer> list = new ArrayList<>();
 	

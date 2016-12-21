@@ -6,9 +6,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class CheckList {
+public class IdVerifier {
 	
-	DataBase db = new DataBase();
+	DataBaseManager db = new DataBaseManager();
 	public Statement stmt;
 	public ArrayList<Integer> list = new ArrayList<>();
 	

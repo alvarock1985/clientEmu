@@ -2,7 +2,7 @@ package xyz.acme.client;
 
 import java.sql.Timestamp;
 
-public class Time {
+public class TimeStamp {
 	
 	public Timestamp getTime(){
 		

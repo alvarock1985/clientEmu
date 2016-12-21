@@ -2,7 +2,7 @@ package xyz.acme.client;
 
 import java.sql.*;
 
-public class DataBase {
+public class DataBaseManager {
 	
 	
 	

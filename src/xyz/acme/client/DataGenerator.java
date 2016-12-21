@@ -5,15 +5,15 @@ import java.sql.Statement;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 
-public class InsertData {
+public class DataGenerator {
 	
-	DataBase db = new DataBase();
-	CheckList chk = new CheckList();
-	Time time = new Time();
-	RandomInt ran = new RandomInt();
+	DataBaseManager db = new DataBaseManager();
+	IdVerifier chk = new IdVerifier();
+	TimeStamp time = new TimeStamp();
+	RandomNumber ran = new RandomNumber();
 	public Statement stmt;
 	ArrayList<Integer> lista = new ArrayList<>();
-	SensorID si = new SensorID();
+	IdChecker si = new IdChecker();
 	
 	public void insertData(){
 		

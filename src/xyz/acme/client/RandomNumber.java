@@ -3,7 +3,7 @@ package xyz.acme.client;
 
 import java.util.Random;
 
-public class RandomInt {
+public class RandomNumber {
 	
 	int value;
 	
